@@ -101,9 +101,13 @@ figcaption b{color:var(--pur3);font-weight:600}
 .bcard:hover{border-color:var(--line2)}
 .bcard .wm{font-size:17px;font-weight:700;letter-spacing:-.01em;color:#f0ecfa;line-height:1.25}
 .bcard .cat{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--mut2);margin-top:9px;font-weight:600}
-.deckslot{margin-top:26px;background:rgba(168,120,255,.06);border:1px dashed var(--line2);border-radius:12px;
-  padding:18px 20px;font-size:13.5px;color:var(--mut)}
-.deckslot b{color:var(--pur3)}
+.ctarow{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(90deg,var(--pur2),var(--pur));
+  color:#fff;text-decoration:none;font-size:14.5px;font-weight:650;letter-spacing:-.01em;
+  padding:14px 24px;border-radius:10px;border:1px solid rgba(212,188,255,.28);transition:filter .2s,transform .15s}
+.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.btn .ar{font-size:15px;opacity:.85}
+.ctanote{font-size:13px;color:var(--mut2)}
 @media (max-width:860px){.brands{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:420px){.brands{grid-template-columns:1fr}}
 
@@ -425,6 +429,11 @@ Test method&nbsp;&nbsp;&nbsp;&nbsp;<span>Melanin inhibition, 0.78% to 1.56%</spa
       <div class="bcard"><div class="wm">Mia by Tanishq</div><div class="cat">Jewellery</div></div>
       <div class="bcard"><div class="wm">Bombay Shaving Company</div><div class="cat">Grooming</div></div>
       <div class="bcard"><div class="wm">Fableroom</div><div class="cat">Home &amp; Living</div></div>
+    </div>
+
+    <div class="ctarow">
+      <a class="btn" href="https://troopoddeck.pages.dev/" target="_blank" rel="noopener">View the Troopod deck <span class="ar">&rarr;</span></a>
+      <span class="ctanote">Landing pages, CRO and site speed, live in 24 hours.</span>
     </div>
   </div>
 </section>
