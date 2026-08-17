@@ -92,6 +92,21 @@ figcaption b{color:var(--pur3);font-weight:600}
 .arw{color:var(--mut2);font-size:22px}
 @media (max-width:640px){.scores{grid-template-columns:1fr;gap:12px}.arw{display:none}}
 
+/* CREDENTIALS */
+.creds{background:linear-gradient(180deg,var(--bg),var(--bg2));border-top:1px solid var(--line);padding:56px 0 52px}
+.creds .lead{font-size:16px;color:#cbc4dd;max-width:62ch;margin-top:8px}
+.brands{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.bcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px 18px;text-align:center;
+  display:flex;flex-direction:column;justify-content:center;min-height:104px;transition:border-color .2s}
+.bcard:hover{border-color:var(--line2)}
+.bcard .wm{font-size:17px;font-weight:700;letter-spacing:-.01em;color:#f0ecfa;line-height:1.25}
+.bcard .cat{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--mut2);margin-top:9px;font-weight:600}
+.deckslot{margin-top:26px;background:rgba(168,120,255,.06);border:1px dashed var(--line2);border-radius:12px;
+  padding:18px 20px;font-size:13.5px;color:var(--mut)}
+.deckslot b{color:var(--pur3)}
+@media (max-width:860px){.brands{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:420px){.brands{grid-template-columns:1fr}}
+
 /* TABLE */
 table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px}
 th{text-align:left;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut2);font-weight:700;padding:10px 12px;border-bottom:1px solid var(--line2)}
@@ -398,6 +413,21 @@ Test method&nbsp;&nbsp;&nbsp;&nbsp;<span>Melanin inhibition, 0.78% to 1.56%</spa
   </div>
 </section>
 
+
+<section class="creds">
+  <div class="wrap">
+    <div class="eyebrow">Prepared by</div>
+    <h2 class="sec">Troopod</h2>
+    <p class="lead">An AI-native website growth agency for D2C brands. We run conversion diagnostics, CRO programmes, landing page and PDP builds, Shopify development and end-to-end website management. This analysis was produced with TrooCRO, our proprietary barrier framework: 903 signals mapped across 72 conversion barriers.</p>
+
+    <div class="brands">
+      <div class="bcard"><div class="wm">Durex</div><div class="cat">Personal Care</div></div>
+      <div class="bcard"><div class="wm">Mia by Tanishq</div><div class="cat">Jewellery</div></div>
+      <div class="bcard"><div class="wm">Bombay Shaving Company</div><div class="cat">Grooming</div></div>
+      <div class="bcard"><div class="wm">Fableroom</div><div class="cat">Home &amp; Living</div></div>
+    </div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
